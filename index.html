@@ -3,50 +3,471 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./styles/YoungSerif-Regular.ttf" />
     <link rel="stylesheet" href="./styles/RobotoCondensed-Regular.ttf" />
     <title>Design_TruFeel</title>
   </head>
   <body>
-    <div class="container">
+    <div class="site-container">
       <header class="header">
         <div class="container-header">
           <div class="menu">menu</div>
           <div class="logo">Design_TrueFeel</div>
-          <div class="contact">contakt</div>
+          <div class="contact">contact</div>
         </div>
-      <br>
-      <div class="line"></div>
-      <nav class="nav-bar">
-        <a href="#!" class="nav-bar__link">интерьер </a>
-        <a href="#!" class="nav-bar__link"> декорирование </a>
-        <a href="#!" class="nav-bar__link"> сад и ландшафт </a>
-        <a href="#!" class="nav-bar__link"> домоводство </a>
-        <a href="#!" class="nav-bar__link"> свадьбы </a>
-        <a href="#!" class="nav-bar__link"> праздники </a>
-        <a href="#!" class="nav-bar__link"> рецепты</a>
-      </nav>
-    </div>
-    <div class="cap">
-      <div class="slider">
-        <img class="slider__img" src="./src/img/main.jpg" alt="main" />
-        <div class="slider__interior">интерьер</div>
-        <p class="slider__text">Здесь какой-то текст</p>
-        <p class="slider__text">длинный или короткий</p>
-      </div>
-      <div class="newsletter">
-        <p>Получайте новые статьи</p>
-        <div class="formmail">
-          <form action="">
-            <input type="email" placeholder="email" />
-            <br />
-            <br />
-            <button class="submit">Подписаться</button>
-          </form>
-        </div>
-      </div>
-    </div>
+
+        <br />
+        <hr style="height: 2px; background-color: #2c2628" />
+
+        <nav class="nav-bar">
+          <ul style="padding-left: 0px">
+            <li><a href="#!" class="nav-bar__link">Интерьер</a></li>
+            <li><a href="#!" class="nav-bar__link">декорирование</a></li>
+            <li><a href="#!" class="nav-bar__link">сад и ландшафт</a></li>
+            <li><a href="#!" class="nav-bar__link">домоводство</a></li>
+            <li><a href="#!" class="nav-bar__link">свадьбы</a></li>
+            <li><a href="#!" class="nav-bar__link">праздники</a></li>
+            <li><a href="#!" class="nav-bar__link">рецепты</a></li>
+          </ul>
+        </nav>
       </header>
-   </body>
+      <main>
+        <section>
+          <!--Upper section-->
+          <div class="cap">
+            <div class="slider">
+              <img
+                class="slider__img"
+                src="./src/img/main.jpg"
+                alt="фото красивого загородного дома"
+              />
+              <div class="slider__interior">интерьер</div>
+              <div class="slider__text">
+                <span>Здесь какой-то текст длинный или короткий</span>
+              </div>
+            </div>
+            <div class="cool">
+              <div class="newsletter">
+                <span>Получайте новые статьи</span>
+                <div class="formmail">
+                  <form action="">
+                    <input type="email" placeholder="email" />
+                    <br />
+                    <br />
+                    <button class="submit">Подписаться</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr
+          style="height: 1px; background-color: #2c2628; margin-bottom: 14px"
+        />
+        <section>
+          <!--New topics and news-->
+          <h3>Новое и лучшее</h3>
+          <div class="new-topics">
+            <div class="new-topics__link1">1</div>
+            <div class="new-topics__link2">2</div>
+            <div class="new-topics__link3">3</div>
+            <br />
+            <div class="new-topics__link4">4</div>
+            <div class="new-topics__link5">5</div>
+            <div class="new-topics__link6">6</div>
+          </div>
+        </section>
+
+        <aside>
+          <div class="side-panel">
+            <h3 style="margin-top: 14px; margin-bottom: 14px">
+              Подпишитесь на нас в instagram
+            </h3>
+            <div class="side-panel__first">
+              <div class="side-panel__first__one">
+                <img
+                  class="side-panel__first__one__pic1"
+                  src="./src/img/picture.jpg"
+                  alt="девушка прыгает"
+                />
+              </div>
+              <div class="side-panel__first__two">
+                <img
+                  class="side-panel__first__two__pic2"
+                  src="./src/img/popular-notis.jpg"
+                  alt="девушка прыгает"
+                />
+                <div class="side-panel__first__text">
+                  <span
+                    >Стеклянные двери на крыше-отличное решение для освещения
+                    небольшого пространства</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="side-panel__second">
+              <div class="side-panel__second__one">
+                <img
+                  class="side-panel__second__one__pic1"
+                  src="./src/img/kitchen.jpg"
+                  alt="интерьер кухни"
+                />
+              </div>
+              <div class="side-panel__second__two">
+                <!--<img
+                  class="side-panel__second__two__pic2"
+                  src="./src/img/kitchen.jpg"
+                  alt="интерьер кухни"
+                />-->
+              </div>
+              <div class="side-panel__second__three">
+                <!--<img
+                  class="side-panel__second__three__pic3"
+                  src="./src/img/kitchen.jpg"
+                  alt="интерьер кухни"
+                />-->
+              </div>
+            </div>
+            <div class="side-panel__third">
+              <div class="side-panel__third__one">
+                <img
+                  class="side-panel__third__one__pic1"
+                  src="./src/img/check.jpg"
+                  alt="девушка прыгает"
+                />
+              </div>
+            </div>
+          </div>
+        </aside>
+        <section>
+          <!--Chapters-->
+          <div class="chapter">
+            <!-- Раздел первый -->
+            <div class="chapter-one">
+              <h3 style="margin-top: 14px">Раздел первый</h3>
+              <div class="chapter-one__item1">
+                <div class="chapter-one__item1__pic">
+                  <img
+                    class="chapter-one__item1__pic1"
+                    src="./src/img/jump.jpg"
+                    alt="девушка прыгает"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">Название текст</h4>
+                <span>Navy Коллекция Emecojook является символом дизайна</span>
+              </div>
+              <div class="chapter-one__item2">
+                <div class="chapter-one__item2__pic">
+                  <img
+                    class="chapter-one__item2__pic2"
+                    src="./src/img/makeup.jpg"
+                    alt="косметика"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">
+                  Название текст2 текст длинный в несколько сторок
+                </h4>
+                <span>Navy Коллекция Emecojook является символом дизайна</span>
+              </div>
+              <div class="chapter-one__item3">
+                <div class="chapter-one__item3__pic">
+                  <img
+                    class="chapter-one__item3__pic3"
+                    src="./src/img/sport.jpg"
+                    alt="девушка тянет штангу"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">Название текст3 текст длинный</h4>
+                <span
+                  >Navy Коллекция Emecojook является символом дизайна и красоты
+                  в вашем интерьере</span
+                >
+              </div>
+              <div class="chapter-one__item4">
+                <div class="chapter-one__item4__pic">
+                  <img
+                    class="chapter-one__item4__pic4"
+                    src="./src/img/fly.jpg"
+                    alt="девушка весит на обруче"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">Название текст 4</h4>
+                <span>Navy Коллекция Emecojook является символом дизайна</span>
+              </div>
+            </div>
+            <hr
+              style="
+                height: 1px;
+                width: 960px;
+                background-color: #2c2628;
+                margin-left: 0;
+                margin-bottom: 14px;
+              "
+            />
+            <!-- Раздел второй -->
+            <div class="chapter-two">
+              <h3>Раздел второй</h3>
+              <div class="chapter-two__item1">
+                <div class="chapter-two__item1__pic">
+                  <img
+                    class="chapter-two__item1__pic1"
+                    src="./src/img/hz.jpg"
+                    alt="подушка наверное"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">Дизайнерский диван</h4>
+                <span
+                  >Новый диван из коллекции EvoBable впишется далеко не во все
+                  интерьеры и текст</span
+                >
+              </div>
+              <div class="chapter-two__item2">
+                <div class="chapter-two__item2__pic">
+                  <img
+                    class="chapter-two__item2__pic2"
+                    src="./src/img/firure.jpg"
+                    alt="подушка наверное"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">
+                  Концептуальные детали интерьера
+                </h4>
+                <span
+                  >Дизайнерские детали интерьера из коллекции
+                  InteriorFigures</span
+                >
+              </div>
+              <div class="chapter-two__item3">
+                <div class="chapter-two__item3__pic">
+                  <img
+                    class="chapter-two__item3__pic3"
+                    src="./src/img/plates.jpg"
+                    alt="подушка наверное"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">Дизайнерская посуда</h4>
+                <span
+                  >Посуда от начинающего дизайнера из России поражает
+                  воображение расцвекой и формами</span
+                >
+              </div>
+            </div>
+            <hr
+              style="
+                height: 1px;
+                width: 960px;
+                background-color: #2c2628;
+                margin-left: 0;
+                margin-bottom: 14px;
+              "
+            />
+            <!-- Раздел третий -->
+            <div class="chapter-three">
+              <h3>Раздел третий</h3>
+              <div class="chapter-three__item1">
+                <div class="chapter-three__item1__pic">
+                  <img
+                    class="chapter-three__item1__pic1"
+                    src="./src/img/jump.jpg"
+                    alt="девушка прыгает"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">Название текст</h4>
+                <span>Navy Коллекция Emecojook является символом дизайна</span>
+              </div>
+              <div class="chapter-three__item2">
+                <div class="chapter-three__item2__pic">
+                  <img
+                    class="chapter-three__item2__pic2"
+                    src="./src/img/makeup.jpg"
+                    alt="косметика"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">
+                  Название текст2 текст длинный в несколько сторок
+                </h4>
+                <span>Navy Коллекция Emecojook является символом дизайна</span>
+              </div>
+              <div class="chapter-three__item3">
+                <div class="chapter-three__item3__pic">
+                  <img
+                    class="chapter-three__item3__pic3"
+                    src="./src/img/sport.jpg"
+                    alt="девушка тянет штангу"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">Название текст3 текст длинный</h4>
+                <span
+                  >Navy Коллекция Emecojook является символом дизайна и красоты
+                  в вашем интерьере</span
+                >
+              </div>
+              <div class="chapter-three__item4">
+                <div class="chapter-three__item4__pic">
+                  <img
+                    class="chapter-three__item4__pic4"
+                    src="./src/img/fly.jpg"
+                    alt="девушка весит на обруче"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">Название текст 4</h4>
+                <span>Navy Коллекция Emecojook является символом дизайна</span>
+              </div>
+            </div>
+            <hr
+              style="
+                height: 1px;
+                width: 960px;
+                background-color: #2c2628;
+                margin-left: 0;
+                margin-bottom: 14px;
+              "
+            />
+            <!-- Раздел видео -->
+            <div class="video-cont">
+              <h3 style="margin-bottom: 19px">Видео</h3>
+              <div class="video-cont__vid">
+                <img class="vid__img" src="./src/img/Vid.jpg" alt="видео" />
+
+                <div class="vid__text">
+                  <span
+                    >Navi Коллекция Еспр является символом дизайна и текст
+                    текст</span
+                  >
+                  <button class="go-to-see">Посмотреть</button>
+                </div>
+              </div>
+            </div>
+            <hr
+              style="
+                height: 1px;
+                width: 960px;
+                background-color: #2c2628;
+                margin-left: 0;
+                margin-bottom: 14px;
+              "
+            />
+            <!-- Раздел четвертый -->
+            <div class="chapter-four">
+              <h3>Раздел четвертый</h3>
+              <div class="chapter-four__item1">
+                <div class="chapter-four__item1__pic">
+                  <img
+                    class="chapter-four__item1__pic1"
+                    src="./src/img/jump.jpg"
+                    alt="девушка прыгает"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">Название текст</h4>
+                <span>Navy Коллекция Emecojook является символом дизайна</span>
+              </div>
+              <div class="chapter-four__item2">
+                <div class="chapter-four__item2__pic">
+                  <img
+                    class="chapter-four__item2__pic2"
+                    src="./src/img/makeup.jpg"
+                    alt="косметика"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">
+                  Название текст2 текст длинный в несколько сторок
+                </h4>
+                <span>Navy Коллекция Emecojook является символом дизайна</span>
+              </div>
+              <div class="chapter-four__item3">
+                <div class="chapter-four__item3__pic">
+                  <img
+                    class="chapter-four__item3__pic3"
+                    src="./src/img/sport.jpg"
+                    alt="девушка тянет штангу"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">Название текст3 текст длинный</h4>
+                <span
+                  >Navy Коллекция Emecojook является символом дизайна и красоты
+                  в вашем интерьере</span
+                >
+              </div>
+              <div class="chapter-four__item4">
+                <div class="chapter-four__item4__pic">
+                  <img
+                    class="chapter-four__item4__pic4"
+                    src="./src/img/fly.jpg"
+                    alt="девушка весит на обруче"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">Название текст 4</h4>
+                <span>Navy Коллекция Emecojook является символом дизайна</span>
+              </div>
+            </div>
+            <hr
+              style="
+                height: 1px;
+                width: 960px;
+                background-color: #2c2628;
+                margin-left: 0;
+                margin-bottom: 14px;
+              "
+            />
+            <!-- Раздел пятый -->
+            <div class="chapter-five">
+              <h3>Раздел пятый</h3>
+              <div class="chapter-five__item1">
+                <div class="chapter-five__item1__pic">
+                  <img
+                    class="chapter-five__item1__pic1"
+                    src="./src/img/hz.jpg"
+                    alt="подушка наверное"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">Дизайнерский диван</h4>
+                <span
+                  >Новый диван из коллекции EvoBable впишется далеко не во все
+                  интерьеры и текст</span
+                >
+              </div>
+              <div class="chapter-five__item2">
+                <div class="chapter-five__item2__pic">
+                  <img
+                    class="chapter-five__item2__pic2"
+                    src="./src/img/firure.jpg"
+                    alt="подушка наверное"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">
+                  Концептуальные детали интерьера
+                </h4>
+                <span
+                  >Дизайнерские детали интерьера из коллекции
+                  InteriorFigures</span
+                >
+              </div>
+              <div class="chapter-five__item3">
+                <div class="chapter-five__item3__pic">
+                  <img
+                    class="chapter-five__item3__pic3"
+                    src="./src/img/plates.jpg"
+                    alt="подушка наверное"
+                  />
+                </div>
+                <h4 style="margin-top: 12px">Дизайнерская посуда</h4>
+                <span
+                  >Посуда от начинающего дизайнера из России поражает
+                  воображение расцвекой и формами</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
